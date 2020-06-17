@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testes HTML</title>
+</head>
+
+<header id="indice">
+    <h1 align="center">Exemplos HTML</h1>
+    <nav align="center">
+        <dl>
+            <dt><a href="../index.html">Home</a></dt>
+            <dt><a href="CSS.html">CSS</a></dt>
+            <dt><a href="JavaScript.html">JavaScript</a></dt>
+        </dl>
+    </nav>
+</header>
+<br><br>
+
+<body>
+    <h3 id="inicio">Exemplos de formatação de texto -
+        <code>&lt;h3 (varia de acordo com a tag utilizada) id="nome de identificação"&gt;Dar nome identificador (nome pode ser utilizado para chamar em link posterior&lt;/h3&gt;</code>
+    </h3>
+    <ul>
+        <li>
+            <b>texto negrito</b> - <code>&lt;b&gt;Texto negrito&lt;/b&gt;</code>
+        </li>
+        <li>
+            <strong>texto forte</strong> - <code>&lt;strong&gt;Texto forte&lt;/strong&gt;</code>
+        </li>
+        <li>
+            <em>texto enfatizado</em> - <code>&lt;em&gt;Texto enfatizado&lt;/em&gt;</code>
+        </li>
+        <li>
+            <i>texto itálico</i> - <code>&lt;i&gt;Texto itálico&lt;/i&gt;</code>
+        </li>
+        <li>
+            <mark>texto grifado</mark> - <code>&lt;mark&gt;Texto grifado&lt;/mark&gt;</code>
+        </li>
+        <li>
+            <big>texto grande</big> - <code>&lt;big&gt;Texto grande&lt;/big&gt;</code>
+        </li>
+        <li>
+            <small>texto pequeno</small> - <code>&lt;small&gt;Texto pequeno&lt;/small&gt;</code>
+        </li>
+        <li>
+            <del>texto tachado</del> - <code>&lt;del&gt;Texto tachado&lt;/del&gt;</code>
+        </li>
+        <li>
+            <ins>texto inserido</ins> - <code>&lt;ins&gt;Texto inserido&lt;/ins&gt;</code>
+        </li>
+        <li>
+            <u>texto sublinhado</u> - <code>&lt;u&gt;Texto sublinhado&lt;/u&gt;</code>
+        </li>
+        <li>
+            esse é um <sub>texto subscrito</sub> - <code>&lt;sub&gt;Texto subscrito&lt;/sub&gt;</code>
+        </li>
+        <li>
+            esse é um <sup>texto sobreescrito</sup> - <code>&lt;sup&gt;Texto sobreescrito&lt;/sup&gt;</code>
+        </li>
+    </ul>
+
+    <h3>Exemplos de lista</h3>
+
+    <ul>- <code>&lt;ul&gt;Abre lista não ordenada</code>
+        <br><br>
+        <li>item 1</li>
+        <li>item 2 - <code>&lt;li&gt;Item lista &lt;/li&gt;</code></li>
+        <li>item 3</li>
+    </ul>- <code>Fecha lista não ordenada &lt;/ul&gt;</code>
+
+    <ol>- <code>&lt;ol&gt;Abre lista ordenada</code>
+        <br><br>
+        <li>item 1</li>
+        <ul>
+            <li>item 1.1</li>
+            <li>item 1.2 - <code>&lt;li&gt;item dentro de item&lt;/li&gt;</code></li>
+            <li>item 1.3</li>
+        </ul>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>- <code>Fecha lista ordenada&lt;/ol&gt;</code>
+
+    <dl>- <code>&lt;dl&gt;Abre lista de definições</code>
+        <br><br>
+        <dt>Título da Lista - <code>&lt;dt&gt;Título da lista&lt;/dt&gt;</code></dt>
+        <dd>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sit. -
+            <code>&lt;dd&gt;descrição de lista&lt;/dd&gt;</code>
+        </dd>
+        <dt>Navegador - <code>&lt;dt&gt;Título da lista&lt;/dt&gt;</code></dt>
+        </dt>
+        <dd>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, sit. -
+            <code>&lt;dd&gt;descrição de lista&lt;/dd&gt;</code>
+        </dd>
+    </dl>- <code>Fecha lista de definições&lt;/dl&gt;</code>
+
+    <h3>Exemplos de Links</h3>
+    <!-- link para outro site -->
+    <p>
+        Visite o site da <a href="https://www.proway.com.br/" target="_blank">Proway</a> -
+        <code>&lt;a href="link completo do site"&gt;palvra-chave(link para outro site)&lt;/a&gt;</code>
+    </p>
+    <p>
+        <!-- link para bookmark da própria página -->
+        volte ao <a href="#inicio">topo</a> da página -
+        <code>&lt;a href="#nome da ID que irá solicitar"&gt;palvra-chave(link para bookmark do site)&lt;/a&gt;</code>
+    </p>
+    <p>
+        <!-- ir para o bookmark de outra página -->
+        na sessão <a href="http://serasa.proway.com.br/#faq" target="_blank">perguntas frequentes</a> do projeto
+        serasa
+        da Proway você pode tirar suas dúvidas. -
+        <code>&lt;a href="link completo do site/#ID desejada do site"&gt;palvra-chave(link para bookmark de outro site)&lt;/a&gt;</code>
+    </p>
+    <p>
+        <!-- link para outra página do site-->
+        A descrição do curso cobol she force 2020 você encontra em nossa <a href="../index.html" target="_blank">página
+            inicial</a> -
+        <code>&lt;a href="localização da página (para utilizar uma página em pasta anterior usar ../)"&gt;palvra-chave(link para outra página do site)&lt;/a&gt;</code>
+    </p>
+
+    <!-- Tabela abaixo criada para fins de organização das explicações-->
+    <table>
+        <tr>
+            <td rowspan="3">
+                <figure> -
+                    <code>&lt;figure&gt;Dar significado semântico para a imagem utilizada para link</code><br><br>
+                    <a href="https://pt.wikipedia.org/wiki/COBOL">
+                        <img src="../img/cobol.png" alt="dinos da programação" width="100">
+                    </a>
+                    <figcaption>Dinossauro do Cobol</figcaption>
+                </figure> - <code>&lt;/figure&gt;</code>
+            </td>
+            <td> -
+                <code>&lt;img src="caminho e nome da imagem.extensão alt="dinos da programação"(Nome apresentado caso a imagem não carregue por algum motivo) width="100"(tamanho em pixel&gt;Adicionar imagem&lt;/img&gt;</code>
+            </td>
+        </tr>
+        <tr>
+            <td> - <code>&lt;a href="site completo para"&gt;Imagem clicável&lt;/a&gt;</code></td>
+        </tr>
+        <tr>
+            <td> - <code>&lt;figcaption&gt;Adicionar descrição para a imagem&lt;/figcaption&gt;</code></td>
+        </tr>
+    </table>
+    <p>
+        <!-- link para e-mail -->
+        Para mais informações, <a
+            href="mailto:ivan.borchardt.cobo@gmail.com?subject=Informações&body=Informações do site Padawan She Force 2020">entre
+            em contato.</a> -
+        <code>&lt;a href="email para redirecionamento ?subject=Definir assunto do e-mail &body=Definir texto do e-mail"&gt;  Link de redirecionamento para e-mail (só irá funcionar caso a máquina do usuário tiver aplicativo de e-mail baixado)&lt;/a&gt;</code>
+    </p>
+
+    <h3>Exemplos de Tabela</h3>
+    <br>
+    -
+    <code>Abaixo abriremos a tabela abaixo da seguinte forma: &lt;table border="numero de borda" width="tamanho que a tabela deve utilizar da página, pode ser em pixel ou porcentagem"&gt;</code><br>
+    <code>Cada linha de Tabela se inicia com &lt;tr&gt; Dento de cada linha inserimos colunas uma a uma com &lt;td align="nome do alinhamento em inglês (center, right (tem-se por padrão alinhamento left))"(para linha de cabeçalho substitui-se por th)&gt;linha 1, coluna 1&lt;/td&gt;&lt;td&gt;linha 1, coluna 2&lt;/td&gt;&lt;/tr&gt;<br></code>
+    <br>
+    <table border="1" width=100%>
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+        </tr>
+        <tr>
+            <td>
+                <center>linha 1, coluna 1</center>
+            </td>
+            <td>
+                <center>linha 1, coluna 2</center>
+            </td>
+            <td>
+                <center>linha 1, coluna 3</center>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">linha 2, coluna 1</td>
+            <td>linha 2, coluna 2</td>
+            <td>linha 2, coluna 3</td>
+        </tr>
+        <tr>
+            <td align="center">linha 3, coluna 1</td>
+            <td>linha 3, coluna 2</td>
+            <td>linha 3, coluna 3</td>
+        </tr>
+    </table>
+    <br>
+    - <code>Fecha tabela &lt;/table&gt;</code>
+    <br><br>
+    - <code>Fecha tabela &lt;/table&gt;</code>
+    <br><br>
+    <table border="1">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+        </tr>
+        <tr>
+            <td>linha 1, coluna 1</td>
+            <td>linha 1, coluna 2</td>
+            <td>linha 1, coluna 3</td>
+        </tr>
+        <tr>- <code>Abre nova tabela</code>
+            <td>linha 2, coluna 1</td>
+            <td>linha 2, coluna 2</td>
+            <td>linha 2, coluna 3</td>
+        </tr>
+        <tr>
+            <td>linha 3, coluna 1</td>
+            <td>linha 3, coluna 2</td>
+            <td>linha 3, coluna 3</td>
+        </tr>
+    </table>
+    <br>- <code>Fecha tabela</code>
+    <table border="1">
+        <tr>
+            <td>Coluna 1</td>
+            <td>Coluna 2</td>
+            <td>Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>Coluna 1</td>
+            <td>Coluna 2</td>
+            <td>Coluna 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 2</td>
+            <td>Linha 2, Coluna 3</td>
+        </tr>
+    </table>
+    <br>
+    <table border="4" cellspacing="0" cellpadding="20" width=70% bgcolor="ff69B4" align="CENTER">
+        <caption><strong><i>Nota Fria Papelaria</i></strong></caption>
+        <thead>
+            <tr>
+                <td width="30%" height="50">Quantidade</td>
+                <td width="30%">Descrição</td>
+                <td width="20%">Preço Unit.</td>
+                <td width="20%">Preço Total</td>
+            </tr>
+            <tr>
+                <td>2</th>
+                <td>Lápis de cor</td>
+                <td>R$ 5,00</td>
+                <td>$ 10,00</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>Caderno brochura 60fl</td>
+                <td>R$ 3,00</td>
+                <td>R$ 12,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <Tr>
+                <td align="center" colspan="3"><b>Total</b></td>
+                <td><mark>R$ 22,00</mark></td>
+            </Tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
